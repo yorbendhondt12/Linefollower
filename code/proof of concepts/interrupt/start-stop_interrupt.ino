@@ -4,7 +4,7 @@ volatile int buttonState = LOW;
 
 void setup() {
   pinMode(ledPin, OUTPUT);
-  pinMode(buttonPin, INPUT); // Interne pull-up weerstand inschakelen
+  pinMode(buttonPin, INPUT);
   Serial.begin(9600);
   attachInterrupt(digitalPinToInterrupt(buttonPin), buttonInterrupt, RISING);
 }
